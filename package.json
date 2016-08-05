@@ -3,6 +3,16 @@
   "version": "1.0.0",
   "description": "Make Hapi use Bluebird for its promises.",
   "author": "Mathew Gardner <mathewdgardner@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mathewdgardner/hapi-bluebird"
+  },
+  "bugs": {
+    "url": "https:://github.com/mathewdgardner/hapi-bluebird/issues"
+  },
+  "engines": {
+    "node": ">= 4.0.0"
+  },
   "main": "index.js",
   "scripts": {
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
