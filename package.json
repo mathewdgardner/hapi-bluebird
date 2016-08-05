@@ -1,0 +1,38 @@
+{
+  "name": "hapi-bluebird",
+  "version": "1.0.0",
+  "description": "Make Hapi use Bluebird for its promises.",
+  "author": "Mathew Gardner <mathewdgardner@gmail.com>",
+  "main": "index.js",
+  "scripts": {
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "lint": "eslint . --fix",
+    "posttest": "npm run lint",
+    "test": "mocha",
+    "test:coverage": "istanbul cover _mocha && npm run lint"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "hapi",
+    "bluebird",
+    "promise",
+    "promises"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "bluebird": ">= 2.0.0",
+    "hapi": ">= 12.0.0"
+  },
+  "devDependencies": {
+    "bluebird": "^3.4.1",
+    "chai": "^3.5.0",
+    "coveralls": "^2.11.12",
+    "eslint": "^2.13.1",
+    "eslint-plugin-mocha": "^4.3.0",
+    "hapi": "^14.1.0",
+    "istanbul": "^0.4.4",
+    "mocha": "^3.0.1"
+  }
+}
