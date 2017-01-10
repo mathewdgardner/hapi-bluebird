@@ -14,8 +14,7 @@ describe('hapi promises', () => {
     const promise = server.start()
       .finally(() => server.stop());
 
-    expect(promise).to.be.instanceof(Bluebird)
-      .and.not.instanceof(Promise);
+    expect(promise).to.be.instanceof(Bluebird);
   });
 
   it('should be bluebird promises with rejection', () => {
@@ -25,7 +24,6 @@ describe('hapi promises', () => {
       .catch(() => {})
       .finally(() => server.stop());
 
-    expect(promise).to.be.instanceof(Bluebird)
-      .and.not.instanceof(Promise);
+    expect(promise).to.be.instanceof(Bluebird);
   });
 });
