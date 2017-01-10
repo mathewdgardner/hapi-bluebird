@@ -7,6 +7,12 @@
 
 Make [Hapi](https://gitub.com/hapijs/hapi) use [Bluebird](https://github.com/petkaantonov/bluebird) simply by requiring this module.
 
+## Version 2
+
+Version 2 is updated for use with hapi 16+. It also replaces the native Promise library in node with the Bluebird promise object. This forces Hapi to use Bluebird promises.
+
+## Usage
+
 ```javascript
 const Bluebird = require('bluebird');
 const Hapi = require('hapi');
