@@ -1,6 +1,6 @@
 {
   "name": "hapi-bluebird",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Make Hapi use Bluebird for its promises.",
   "author": "Mathew Gardner <mathewdgardner@gmail.com>",
   "repository": {
